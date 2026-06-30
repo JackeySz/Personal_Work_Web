@@ -22,7 +22,6 @@
 - `assets/projects/robotic-arm-cad.jpeg`
 - `assets/projects/energy-mechanism-blue.jpeg`
 - `assets/projects/energy-mechanism-red.jpeg`
-- `assets/projects/control-ui.jpeg`
 - `documents/RP003_PRD_technical_points.pdf`
 - `documents/RP_PMP_process.xlsx`
 - `documents/RP003_EBOM.xlsx`
