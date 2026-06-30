@@ -435,6 +435,26 @@ h3 {
   margin-top: 16px;
 }
 
+.project-note {
+  background: rgb(255 255 255 / 4%);
+  border-left: 4px solid var(--rust);
+  color: var(--muted);
+  display: grid;
+  gap: 6px;
+  margin-top: 16px;
+  padding: 12px 14px;
+}
+
+.project-note strong {
+  color: var(--gold);
+  font-size: 13px;
+}
+
+.project-note span {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
 .metrics {
   border-top: 1px solid var(--line);
   display: grid;
@@ -471,7 +491,7 @@ h3 {
 
 .project-links::before {
   color: var(--gold);
-  content: "项目原件";
+  content: "项目文件展示";
   font-size: 12px;
   font-weight: 900;
   grid-column: 1 / -1;
