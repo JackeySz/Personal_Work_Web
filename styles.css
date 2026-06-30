@@ -349,16 +349,17 @@ h3 {
   align-items: center;
   display: grid;
   gap: 18px;
-  grid-template-columns: 72px minmax(0, 1fr);
+  grid-template-columns: 116px minmax(0, 1fr);
 }
 
 .education-entry img {
-  background: var(--panel-strong);
+  background: #ffffff;
   border: 1px solid var(--line);
   display: block;
-  height: 72px;
-  padding: 8px;
-  width: 72px;
+  height: 84px;
+  object-fit: contain;
+  padding: 10px;
+  width: 116px;
 }
 
 .project-media,
