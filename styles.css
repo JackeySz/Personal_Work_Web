@@ -270,7 +270,7 @@ h3 {
 .project-grid {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .experience-list {
@@ -308,6 +308,44 @@ h3 {
 .experience-list ul {
   gap: 14px;
   margin-top: 18px;
+}
+
+.experience-list.compact article {
+  grid-template-columns: 180px minmax(0, 1fr);
+}
+
+.education-section {
+  padding-top: 0;
+}
+
+.internship-products {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 18px;
+}
+
+.internship-products figure {
+  background: white;
+  border: 1px solid var(--line);
+  margin: 0;
+  overflow: hidden;
+}
+
+.internship-products img {
+  aspect-ratio: 4 / 3;
+  display: block;
+  object-fit: contain;
+  padding: 10px;
+  width: 100%;
+}
+
+.internship-products figcaption {
+  background: var(--panel-strong);
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 12px;
+  padding: 10px 12px;
 }
 
 .project-media,
@@ -408,6 +446,24 @@ h3 {
   display: block;
   font-size: 14px;
   margin-bottom: 4px;
+}
+
+.project-links {
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 18px;
+  padding-top: 18px;
+}
+
+.project-links a {
+  background: rgb(255 255 255 / 6%);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 800;
+  padding: 11px 12px;
 }
 
 .process-panel {
@@ -586,12 +642,6 @@ li {
   padding: 28px 20px;
 }
 
-@media (max-width: 1120px) {
-  .project-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
 @media (max-width: 860px) {
   nav {
     display: none;
@@ -630,6 +680,11 @@ li {
   }
 
   .contribution-list article {
+    grid-template-columns: 1fr;
+  }
+
+  .internship-products,
+  .project-links {
     grid-template-columns: 1fr;
   }
 }

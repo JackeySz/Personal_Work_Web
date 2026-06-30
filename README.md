@@ -8,7 +8,7 @@
 - 6 轴机械臂系统：全栈系统、软硬件协同、调试交付
 - 文档框架：PRD、项目计划表、技术成果、系统架构与复盘
 - 深色主题首页：RoboMaster 比赛现场照片与个人求职定位
-- 项目材料入口：RP003 PRD、RP008 能量机关 PRD、PMP 流程表、EBOM、作品集 PDF
+- 项目材料入口：RP003 PRD、RP008 能量机关 PRD、PMP 流程表、EBOM
 
 ## 素材放置
 
@@ -19,13 +19,14 @@
 
 - `assets/robomaster-field.jpg`
 - `assets/projects/robomaster-robot-new.jpg`
+- `assets/projects/xtool-p3.png`
+- `assets/projects/xtool-metalfab.png`
 - `assets/projects/robotic-arm-cad.jpeg`
 - `assets/projects/energy-mechanism-blue.jpeg`
 - `documents/RP003_PRD_technical_points.pdf`
 - `documents/RP008_energy_mechanism_PRD_technical_points.pdf`
 - `documents/RP_PMP_process.xlsx`
 - `documents/RP003_EBOM.xlsx`
-- `documents/portfolio.pdf`
 
 ## GitHub Pages 发布
 
