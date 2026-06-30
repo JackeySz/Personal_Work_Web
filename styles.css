@@ -309,6 +309,52 @@ h3 {
   margin-top: 18px;
 }
 
+.experience-media,
+.project-media,
+.project-gallery figure {
+  border: 1px solid var(--line);
+  margin: 18px 0 0;
+  overflow: hidden;
+}
+
+.experience-media img,
+.project-media img,
+.project-gallery img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.experience-media img {
+  max-height: 220px;
+  object-fit: contain;
+}
+
+.project-media img {
+  aspect-ratio: 16 / 10;
+}
+
+.project-media figcaption,
+.project-gallery figcaption {
+  background: rgb(0 0 0 / 28%);
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 10px 12px;
+}
+
+.project-gallery {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.project-gallery img {
+  aspect-ratio: 4 / 3;
+}
+
 .project-card,
 .document-grid article {
   background: var(--white);
@@ -353,6 +399,26 @@ h3 {
   display: block;
   font-size: 14px;
   margin-bottom: 4px;
+}
+
+.evidence-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 20px;
+}
+
+.evidence-grid article {
+  background: var(--white);
+  border: 1px solid var(--line);
+  padding: 26px;
+}
+
+.evidence-grid p:not(.tag) {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.8;
+  margin-top: 16px;
 }
 
 .process-panel {
@@ -536,6 +602,7 @@ li {
   .hero,
   .profile-strip,
   .project-grid,
+  .evidence-grid,
   .workflow-grid,
   .document-layout,
   .contribution,
@@ -596,6 +663,10 @@ li {
   }
 
   .metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .project-gallery {
     grid-template-columns: 1fr;
   }
 

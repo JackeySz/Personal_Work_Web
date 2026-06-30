@@ -18,6 +18,13 @@
 ## 已放入材料
 
 - `assets/robomaster-field.jpg`
+- `assets/projects/xtool-experience.png`
+- `assets/projects/robomaster-robot.png`
+- `assets/projects/robotic-arm-cad.jpeg`
+- `assets/projects/robotic-arm-prototype.jpeg`
+- `assets/projects/energy-mechanism-blue.jpeg`
+- `assets/projects/energy-mechanism-red.jpeg`
+- `assets/projects/control-ui.jpeg`
 - `documents/RP003_PRD_technical_points.pdf`
 - `documents/RP_PMP_process.xlsx`
 - `documents/RP003_EBOM.xlsx`

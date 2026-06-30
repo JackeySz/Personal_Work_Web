@@ -48,3 +48,6 @@ next-env.d.ts
 /public/
 /worker/
 /.openai/
+
+# temporary extracted source images
+/assets/projects/docx-images/
