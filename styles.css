@@ -524,6 +524,7 @@ li {
 
 .document-grid h3 {
   font-size: 20px;
+  min-height: 52px;
 }
 
 .document-grid p {
@@ -531,16 +532,18 @@ li {
   font-size: 14px;
   line-height: 1.7;
   margin-top: 12px;
+  min-height: 72px;
 }
 
 .document-grid a {
   border-bottom: 2px solid var(--rust);
   color: var(--ink);
-  display: inline-flex;
+  display: flex;
   font-size: 14px;
   font-weight: 800;
-  margin-top: 18px;
+  margin-top: auto;
   padding-bottom: 4px;
+  width: 100%;
 }
 
 .section.dark {
