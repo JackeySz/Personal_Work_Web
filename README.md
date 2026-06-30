@@ -18,10 +18,8 @@
 ## 已放入材料
 
 - `assets/robomaster-field.jpg`
-- `assets/projects/xtool-experience.png`
-- `assets/projects/robomaster-robot.png`
+- `assets/projects/robomaster-robot-new.jpg`
 - `assets/projects/robotic-arm-cad.jpeg`
-- `assets/projects/robotic-arm-prototype.jpeg`
 - `assets/projects/energy-mechanism-blue.jpeg`
 - `assets/projects/energy-mechanism-red.jpeg`
 - `assets/projects/control-ui.jpeg`

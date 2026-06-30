@@ -282,9 +282,9 @@ h3 {
   background: var(--white);
   border: 1px solid var(--line);
   display: grid;
-  gap: 28px;
-  grid-template-columns: 180px 1fr;
-  padding: 24px;
+  gap: 34px;
+  grid-template-columns: 220px minmax(0, 1fr);
+  padding: 28px;
 }
 
 .experience-list .time {
@@ -295,7 +295,7 @@ h3 {
 }
 
 .experience-list h3 {
-  font-size: 22px;
+  font-size: 24px;
 }
 
 .experience-list p {
@@ -306,10 +306,10 @@ h3 {
 }
 
 .experience-list ul {
+  gap: 14px;
   margin-top: 18px;
 }
 
-.experience-media,
 .project-media,
 .project-gallery figure {
   border: 1px solid var(--line);
@@ -317,18 +317,12 @@ h3 {
   overflow: hidden;
 }
 
-.experience-media img,
 .project-media img,
 .project-gallery img {
   display: block;
   height: 100%;
   object-fit: cover;
   width: 100%;
-}
-
-.experience-media img {
-  max-height: 220px;
-  object-fit: contain;
 }
 
 .project-media img {
@@ -351,8 +345,21 @@ h3 {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.project-gallery.single {
+  grid-template-columns: 1fr;
+}
+
+.project-gallery.three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .project-gallery img {
   aspect-ratio: 4 / 3;
+}
+
+.project-gallery.single img {
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
 }
 
 .project-card,
@@ -404,8 +411,13 @@ h3 {
 .evidence-grid {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   margin-top: 20px;
+}
+
+.evidence-grid article.wide {
+  display: grid;
+  gap: 24px;
 }
 
 .evidence-grid article {
