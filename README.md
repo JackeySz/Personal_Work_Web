@@ -21,6 +21,9 @@
 - `assets/projects/robomaster-robot-new.jpg`
 - `assets/projects/xtool-p3.png`
 - `assets/projects/xtool-metalfab.png`
+- `assets/projects/rm-field-props-team.jpg`
+- `assets/logos/nus.svg`
+- `assets/logos/szu.svg`
 - `assets/projects/robotic-arm-cad.jpeg`
 - `assets/projects/energy-mechanism-blue.jpeg`
 - `documents/RP003_PRD_technical_points.pdf`

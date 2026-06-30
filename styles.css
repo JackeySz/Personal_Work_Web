@@ -330,6 +330,37 @@ h3 {
   padding: 10px 12px;
 }
 
+.experience-photo {
+  border: 1px solid var(--line);
+  margin: 18px 0 0;
+  max-width: 720px;
+  overflow: hidden;
+}
+
+.experience-photo img {
+  aspect-ratio: 16 / 7;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.education-entry {
+  align-items: center;
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 72px minmax(0, 1fr);
+}
+
+.education-entry img {
+  background: var(--panel-strong);
+  border: 1px solid var(--line);
+  display: block;
+  height: 72px;
+  padding: 8px;
+  width: 72px;
+}
+
 .project-media,
 .project-gallery figure {
   border: 1px solid var(--line);
