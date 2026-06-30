@@ -48,7 +48,7 @@ a {
 
 nav {
   display: flex;
-  gap: 24px;
+  gap: 20px;
 }
 
 nav a {
@@ -152,6 +152,45 @@ h3 {
   overflow: hidden;
   padding: 68px 20px 20px;
   position: relative;
+}
+
+.profile-strip {
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 0 20px 68px;
+}
+
+.profile-strip article {
+  background: var(--white);
+  border: 1px solid var(--line);
+  min-height: 172px;
+  padding: 22px;
+}
+
+.profile-strip span {
+  color: #8b5e34;
+  display: block;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.profile-strip strong {
+  display: block;
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+.profile-strip p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+  margin-top: 12px;
 }
 
 .board-top {
@@ -298,6 +337,42 @@ h3 {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.experience-list {
+  display: grid;
+  gap: 18px;
+}
+
+.experience-list article {
+  background: var(--white);
+  border: 1px solid var(--line);
+  display: grid;
+  gap: 28px;
+  grid-template-columns: 180px 1fr;
+  padding: 24px;
+}
+
+.experience-list .time {
+  color: #8b5e34;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.experience-list h3 {
+  font-size: 22px;
+}
+
+.experience-list p {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.8;
+  margin-top: 12px;
+}
+
+.experience-list ul {
+  margin-top: 18px;
 }
 
 .project-card,
@@ -476,6 +551,7 @@ li {
   }
 
   .hero,
+  .profile-strip,
   .project-grid,
   .document-layout,
   .contribution,
@@ -501,6 +577,10 @@ li {
     flex-direction: column;
   }
 
+  .experience-list article {
+    grid-template-columns: 1fr;
+  }
+
   .contribution-list article {
     grid-template-columns: 1fr;
   }
@@ -509,9 +589,14 @@ li {
 @media (max-width: 520px) {
   .site-header,
   .hero,
+  .profile-strip,
   .section,
   .footer {
     padding-inline: 16px;
+  }
+
+  .profile-strip {
+    padding-bottom: 52px;
   }
 
   h1 {
