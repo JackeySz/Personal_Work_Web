@@ -175,26 +175,6 @@ h3 {
   width: 100%;
 }
 
-.hero-photo figcaption {
-  bottom: 0;
-  color: var(--ink);
-  font-size: 14px;
-  line-height: 1.6;
-  padding: 24px;
-  position: absolute;
-  z-index: 1;
-}
-
-.hero-photo figcaption span {
-  color: var(--gold);
-  display: block;
-  font-size: 12px;
-  font-weight: 900;
-  letter-spacing: 0.14em;
-  margin-bottom: 8px;
-  text-transform: uppercase;
-}
-
 .profile-strip {
   display: grid;
   gap: 1px;
@@ -324,7 +304,7 @@ h3 {
   gap: 14px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   margin-top: 18px;
-  max-width: 760px;
+  max-width: 640px;
 }
 
 .internship-products figure {
@@ -337,7 +317,7 @@ h3 {
 .internship-products img {
   aspect-ratio: 16 / 10;
   display: block;
-  max-height: 190px;
+  max-height: 150px;
   object-fit: contain;
   padding: 10px;
   width: 100%;
@@ -370,16 +350,6 @@ h3 {
   aspect-ratio: 16 / 9;
   max-height: 260px;
   object-fit: cover;
-}
-
-.project-media figcaption,
-.project-gallery figcaption {
-  background: rgb(0 0 0 / 28%);
-  border-top: 1px solid var(--line);
-  color: var(--muted);
-  font-size: 12px;
-  line-height: 1.5;
-  padding: 10px 12px;
 }
 
 .project-gallery {
@@ -772,10 +742,6 @@ li {
 
   .project-gallery {
     grid-template-columns: 1fr;
-  }
-
-  .hero-photo figcaption {
-    padding: 18px;
   }
 
   .workflow-grid article {
