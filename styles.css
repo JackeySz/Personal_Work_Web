@@ -491,7 +491,7 @@ h3 {
 
 .project-links::before {
   color: var(--gold);
-  content: "项目文件展示";
+  content: "部分项目文件展示";
   font-size: 12px;
   font-weight: 900;
   grid-column: 1 / -1;
