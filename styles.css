@@ -248,7 +248,7 @@ h3 {
 
 .project-grid {
   display: grid;
-  align-items: stretch;
+  align-items: start;
   gap: 24px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -418,7 +418,7 @@ h3 {
 }
 
 .project-card {
-  min-height: 100%;
+  min-height: 0;
 }
 
 .tag {
@@ -455,6 +455,42 @@ h3 {
   line-height: 1.7;
 }
 
+.role-stack {
+  display: grid;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.role-stack article {
+  background: rgb(255 255 255 / 4%);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--rust);
+  padding: 14px 16px;
+}
+
+.role-stack span {
+  color: var(--gold);
+  display: block;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+}
+
+.role-stack p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.role-stack p + p {
+  margin-top: 8px;
+}
+
+.role-stack.compact article {
+  padding: 13px 15px;
+}
+
 .metrics {
   border-top: 1px solid var(--line);
   display: grid;
@@ -485,7 +521,7 @@ h3 {
   display: grid;
   gap: 12px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  margin-top: auto;
+  margin-top: 20px;
   padding-top: 20px;
 }
 
@@ -760,10 +796,6 @@ li {
     grid-template-columns: 1fr;
   }
 
-  .project-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .hero {
     gap: 34px;
     padding-top: 28px;
@@ -791,6 +823,7 @@ li {
   }
 
   .internship-products,
+  .project-grid,
   .project-links,
   .contact-panel,
   .contact-actions {
