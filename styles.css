@@ -568,54 +568,6 @@ h3 {
   text-align: center;
 }
 
-.process-panel {
-  border-top: 1px solid var(--line);
-  margin-top: 56px;
-  padding-top: 48px;
-}
-
-.section-head.compact {
-  margin-bottom: 24px;
-}
-
-.workflow-grid {
-  display: grid;
-  gap: 16px;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.workflow-grid article {
-  background: var(--paper);
-  border: 1px solid var(--line);
-  display: flex;
-  flex-direction: column;
-  min-height: 360px;
-  padding: 22px;
-}
-
-.workflow-grid span {
-  color: var(--rust);
-  font-size: 28px;
-  font-weight: 900;
-}
-
-.workflow-grid h3 {
-  font-size: 20px;
-  margin-top: 16px;
-}
-
-.workflow-grid p {
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 1.75;
-  margin-top: 14px;
-}
-
-.workflow-grid ul {
-  margin-top: auto;
-  padding-top: 18px;
-}
-
 ul {
   display: grid;
   gap: 12px;
@@ -636,42 +588,6 @@ li {
   display: grid;
   gap: 48px;
   grid-template-columns: 0.8fr 1.2fr;
-}
-
-.contribution {
-  display: grid;
-  gap: 40px;
-  grid-template-columns: 0.65fr 1.35fr;
-}
-
-.contribution-list {
-  display: grid;
-  gap: 16px;
-}
-
-.contribution-list article {
-  background: var(--white);
-  border: 1px solid var(--line);
-  display: grid;
-  gap: 20px;
-  grid-template-columns: 54px 0.8fr 1.2fr;
-  padding: 22px;
-}
-
-.contribution-list span {
-  color: var(--rust);
-  font-size: 22px;
-  font-weight: 900;
-}
-
-.contribution-list h3 {
-  font-size: 20px;
-}
-
-.contribution-list p {
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 1.75;
 }
 
 .document-grid {
@@ -789,9 +705,7 @@ li {
 
   .hero,
   .profile-strip,
-  .workflow-grid,
   .document-layout,
-  .contribution,
   .document-grid {
     grid-template-columns: 1fr;
   }
@@ -815,10 +729,6 @@ li {
   }
 
   .experience-list article {
-    grid-template-columns: 1fr;
-  }
-
-  .contribution-list article {
     grid-template-columns: 1fr;
   }
 
@@ -866,10 +776,6 @@ li {
 
   .project-gallery {
     grid-template-columns: 1fr;
-  }
-
-  .workflow-grid article {
-    min-height: auto;
   }
 
   .footer {
