@@ -274,6 +274,11 @@ h3 {
   grid-template-columns: 1fr;
 }
 
+.experience-list article.featured-experience > div {
+  min-width: 0;
+  width: 100%;
+}
+
 .experience-heading {
   align-items: baseline;
   display: flex;
@@ -315,7 +320,7 @@ h3 {
 .internship-products {
   display: grid;
   gap: 18px;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
   margin-top: 22px;
   width: 100%;
 }
@@ -533,12 +538,13 @@ h3 {
   margin: 12px 0 0;
   max-width: 720px;
   overflow: hidden;
+  width: 100%;
 }
 
 .role-image img {
   display: block;
   height: auto;
-  max-height: 360px;
+  max-height: none;
   object-fit: contain;
   width: 100%;
 }
@@ -790,7 +796,6 @@ li {
     grid-template-columns: 1fr;
   }
 
-  .internship-products,
   .project-flow,
   .project-links,
   .award-grid,
@@ -798,6 +803,10 @@ li {
   .contact-panel,
   .contact-actions {
     grid-template-columns: 1fr;
+  }
+
+  .internship-products {
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
   }
 }
 
@@ -830,6 +839,10 @@ li {
   }
 
   .project-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .internship-products {
     grid-template-columns: 1fr;
   }
 
