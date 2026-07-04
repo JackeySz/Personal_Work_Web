@@ -39,7 +39,7 @@ Hardware Product Manager · Project Management
 2022广东省电子设计大赛 三等奖
 全国大学生机器人大赛 RoboMaster 2023 机甲大师超级对抗赛		                     南部赛区冠军 全国八强
 全国大学生机器人大赛 RoboMaster 2023 机甲大师超级对抗赛步兵机器人实战奖 		    全国二等奖 
-全国大学生机器人大赛 RoboMaster 2024 机甲大师超级对抗赛  		                 全国八强
+RoboMaster 2024：全国八强
 深圳大学荔园之星奖学金(专业唯一)、优秀学生干部、优秀毕业生
 
 按钮：
@@ -109,6 +109,7 @@ RoboMaster 机甲大师超级对抗赛 2023｜2024
 
 图片替代文字：
 RoboMaster 机器人整机与云台发射机构
+RoboMaster 能量机关实物展示
 
 简介：
 RoboMaster 机甲大师赛  深圳大学RobotPilots战队（副队长/招商经理, 步兵/能量机关负责人）           2023/2024赛季
