@@ -1,14 +1,14 @@
 :root {
-  --paper: #070a0f;
-  --ink: #f4f7fb;
-  --muted: #a7b0bf;
-  --line: #273142;
-  --white: #0e141d;
-  --panel-strong: #151d29;
-  --rust: #ff6b45;
-  --gold: #f7b84b;
-  --teal: #48c7df;
-  --sage: #8aa29e;
+  --paper: #f6f7fb;
+  --ink: #141821;
+  --muted: #5f6877;
+  --line: #dce2ec;
+  --white: #ffffff;
+  --panel-strong: #f1f4f8;
+  --rust: #e85d3f;
+  --gold: #a87516;
+  --teal: #178ca5;
+  --sage: #5f7f79;
 }
 
 * {
@@ -34,8 +34,9 @@ a {
 
 .site-header {
   align-items: center;
-  background: rgb(7 10 15 / 78%);
+  background: rgb(255 255 255 / 86%);
   backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--line);
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -82,8 +83,8 @@ nav a {
 }
 
 .eyebrow {
-  background: rgb(255 255 255 / 8%);
-  border: 1px solid rgb(255 255 255 / 18%);
+  background: rgb(20 24 33 / 4%);
+  border: 1px solid var(--line);
   display: inline-flex;
   margin: 0 0 22px;
   padding: 8px 10px;
@@ -130,7 +131,7 @@ h3 {
 }
 
 .button {
-  border: 1px solid rgb(255 255 255 / 24%);
+  border: 1px solid var(--line);
   display: inline-flex;
   font-size: 14px;
   font-weight: 800;
@@ -142,24 +143,24 @@ h3 {
 .button.primary {
   background: var(--rust);
   border-color: var(--rust);
-  color: #130b08;
+  color: #ffffff;
 }
 
 .button.secondary {
-  background: rgb(255 255 255 / 7%);
+  background: var(--white);
   color: var(--ink);
 }
 
 .hero-photo {
-  border: 1px solid rgb(255 255 255 / 14%);
-  box-shadow: 0 26px 80px rgb(0 0 0 / 46%);
+  border: 1px solid var(--line);
+  box-shadow: 0 24px 60px rgb(20 24 33 / 14%);
   margin: 0;
   overflow: hidden;
   position: relative;
 }
 
 .hero-photo::after {
-  background: linear-gradient(180deg, transparent 45%, rgb(0 0 0 / 82%));
+  background: linear-gradient(180deg, transparent 58%, rgb(20 24 33 / 16%));
   content: "";
   inset: 0;
   position: absolute;
@@ -213,6 +214,42 @@ h3 {
   margin-top: 12px;
 }
 
+.awards-strip {
+  padding-top: 0;
+}
+
+.award-grid,
+.hobby-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.award-grid article,
+.hobby-grid article {
+  background: var(--white);
+  border: 1px solid var(--line);
+  padding: 22px;
+}
+
+.award-grid strong,
+.hobby-grid span {
+  color: var(--gold);
+  display: block;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.award-grid p,
+.hobby-grid p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
 .section {
   margin: 0 auto;
   max-width: 1180px;
@@ -220,7 +257,7 @@ h3 {
 }
 
 .section.light {
-  background: #0a0f16;
+  background: #ffffff;
   border-block: 1px solid var(--line);
   max-width: none;
 }
@@ -246,11 +283,11 @@ h3 {
   max-width: 560px;
 }
 
-.project-grid {
+.project-flow {
   display: grid;
   align-items: start;
-  gap: 24px;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  grid-template-columns: 1fr;
 }
 
 .experience-list {
@@ -393,6 +430,10 @@ h3 {
   grid-template-columns: 1fr;
 }
 
+.project-gallery.arm-gallery {
+  grid-template-columns: 1.45fr 0.8fr;
+}
+
 .project-gallery.three {
   grid-template-columns: repeat(3, 1fr);
 }
@@ -405,6 +446,17 @@ h3 {
   aspect-ratio: 16 / 9;
   max-height: 260px;
   object-fit: contain;
+}
+
+.project-gallery.arm-gallery img {
+  aspect-ratio: 16 / 9;
+  background: #ffffff;
+  max-height: 360px;
+  object-fit: contain;
+}
+
+.project-gallery.arm-gallery figure:last-child img {
+  object-fit: cover;
 }
 
 .project-card,
@@ -436,7 +488,7 @@ h3 {
 }
 
 .project-note {
-  background: rgb(255 255 255 / 4%);
+  background: rgb(232 93 63 / 6%);
   border-left: 4px solid var(--rust);
   color: var(--muted);
   display: grid;
@@ -462,7 +514,7 @@ h3 {
 }
 
 .role-stack article {
-  background: rgb(255 255 255 / 4%);
+  background: var(--panel-strong);
   border: 1px solid var(--line);
   border-left: 4px solid var(--rust);
   padding: 14px 16px;
@@ -527,7 +579,7 @@ h3 {
 
 .project-links::before {
   color: var(--gold);
-  content: "部分项目文件展示";
+  content: "项目文件展示";
   font-size: 12px;
   font-weight: 900;
   grid-column: 1 / -1;
@@ -538,7 +590,7 @@ h3 {
 .project-links a {
   align-items: center;
   background: var(--panel-strong);
-  border: 1px solid rgb(255 255 255 / 16%);
+  border: 1px solid var(--line);
   color: var(--ink);
   display: flex;
   font-size: 13px;
@@ -556,8 +608,8 @@ h3 {
 
 .project-links span {
   align-items: center;
-  background: rgb(255 255 255 / 4%);
-  border: 1px dashed rgb(255 255 255 / 18%);
+  background: var(--panel-strong);
+  border: 1px dashed var(--line);
   color: var(--muted);
   display: flex;
   font-size: 13px;
@@ -577,7 +629,7 @@ ul {
 }
 
 li {
-  background: rgb(255 255 255 / 5%);
+  background: var(--panel-strong);
   border-left: 4px solid var(--rust);
   font-size: 14px;
   font-weight: 700;
@@ -621,9 +673,10 @@ li {
 }
 
 .section.dark {
-  background: #05070b;
+  background: #ffffff;
   color: var(--ink);
   max-width: none;
+  border-block: 1px solid var(--line);
 }
 
 .section.dark .section-head {
@@ -643,8 +696,8 @@ li {
 }
 
 .skill-list span {
-  background: rgb(255 255 255 / 10%);
-  border: 1px solid rgb(255 255 255 / 20%);
+  background: var(--panel-strong);
+  border: 1px solid var(--line);
   font-size: 14px;
   padding: 10px 14px;
 }
@@ -674,7 +727,7 @@ li {
 .contact-actions a {
   background: var(--rust);
   border: 1px solid var(--rust);
-  color: #130b08;
+  color: #ffffff;
   font-size: 15px;
   font-weight: 900;
   padding: 16px 18px;
@@ -683,7 +736,7 @@ li {
 
 .contact-actions a + a {
   background: var(--panel-strong);
-  border-color: rgb(255 255 255 / 18%);
+  border-color: var(--line);
   color: var(--ink);
 }
 
@@ -733,8 +786,10 @@ li {
   }
 
   .internship-products,
-  .project-grid,
+  .project-flow,
   .project-links,
+  .award-grid,
+  .hobby-grid,
   .contact-panel,
   .contact-actions {
     grid-template-columns: 1fr;
@@ -766,7 +821,7 @@ li {
     width: 100%;
   }
 
-  .project-grid {
+  .project-flow {
     grid-template-columns: 1fr;
   }
 
