@@ -177,6 +177,7 @@ h3 {
 
 .awards-strip {
   padding-top: 0;
+  padding-bottom: 38px;
 }
 
 .award-grid {
@@ -379,6 +380,11 @@ h3 {
   object-fit: contain;
   padding: 10px;
   width: 116px;
+}
+
+.education-entry img[alt="新加坡国立大学校徽"] {
+  padding: 6px;
+  transform: scale(1.12);
 }
 
 .project-media,
@@ -585,6 +591,11 @@ h3 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   margin-top: 20px;
   padding-top: 20px;
+}
+
+.role-stack .project-links {
+  margin-top: 14px;
+  padding-top: 14px;
 }
 
 .project-links::before {
